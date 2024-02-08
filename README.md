@@ -1,3 +1,5 @@
+[![Node CI](https://github.com/opifexM/CalcGamesTS/actions/workflows/nodejs.yml/badge.svg)](https://github.com/opifexM/CalcGamesTS/actions/workflows/nodejs.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/051ba6472da5b1940bee/maintainability)](https://codeclimate.com/github/opifexM/CalcGamesTS/maintainability)
 
 ## Calc Games
 

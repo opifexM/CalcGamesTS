@@ -1,0 +1,53 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "lint": "eslint src/",
+    "cli:games": "tsx bin/brain-games.ts",
+    "cli:even": "tsx bin/brain-even.ts",
+    "cli:calc": "tsx bin/brain-calc.ts",
+    "cli:gcd": "tsx bin/brain-gcd.ts",
+    "cli:prime": "tsx bin/brain-prime.ts",
+    "cli:progression": "tsx bin/brain-progression.ts"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-prime": "bin/brain-prime.js",
+    "brain-progression": "bin/brain-progression.js"
+  },
+  "config": {
+    "develop": "--env-file=.env --watch-path=./bin",
+    "production": "--env-file=.env"
+  },
+  "imports": {
+    "#src/*": "./dist/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.11.16",
+    "@types/readline-sync": "1.4.8",
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "concurrently": "8.2.2",
+    "eslint": "8.56.0",
+    "eslint-plugin-optimize-regex": "1.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "eslint-plugin-sonarjs": "0.23.0",
+    "tsx": "4.7.0",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "readline-sync": "1.4.10",
+    "tslib": "2.6.2"
+  }
+}
